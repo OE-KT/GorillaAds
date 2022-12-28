@@ -69,7 +69,7 @@ namespace GorillaAds
             GameObject d = bundle.LoadAsset<GameObject>("adui");
             //OfflineVRRig/Actual Gorilla/rig/body/head
            ad = Instantiate(d);
-            ad.transform.SetParent(GameObject.Find("OfflineVRRig/Actual Gorilla/rig/body/head").transform, false);
+            ad.transform.SetParent(GameObject.Find("Global/Local VRRig/Local Gorilla Player/rig/body/head").transform, false);
             ad.transform.localPosition = new Vector3(0f, 0.1091f, 1.0255f);
             ad.transform.localScale = new Vector3(1.2109f, 1.7182f, 0);
             robloxsound = ad.transform.Find("Audio Source").GetComponent<AudioSource>();
